@@ -1,0 +1,112 @@
+/* Змінні кореневого елемента */
+:root {
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, .85);
+    --purple-primary: 102, 103, 171;
+    --background: 6, 0, 16;
+    --focus-ring: 0 0 0 3px rgba(102, 103, 171, .2);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, .12);
+    --glass-shadow-hover: 0 12px 40px rgba(0, 0, 0, .2);
+    --glass-bg: linear-gradient( 165deg, rgba(102, 103, 171, .05) 0%, rgba(255, 255, 255, .02) 100% );
+    --glass-border-color: rgba(102, 103, 171, .08);
+    --glass-border-color-hover: rgba(102, 103, 171, .15);
+    --divider: 102, 103, 171;
+}
+
+/* Загальні стилі для всіх елементів */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стилі для html */
+html {
+    font-family: Inter, system-ui, sans-serif;
+    background: #000000;
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Стилі для body */
+body {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Стилі для фону */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle at top right, rgba(var(--purple-primary), .15) 0%, rgba(var(--background), .95) 60%);
+}
+
+/* Стилі для скляного ефекту */
+.glass {
+    background: linear-gradient(45deg, rgba(102, 103, 171, .05) 0%, rgba(255, 255, 255, .05) 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px #0000001a;
+    backdrop-filter: blur(20px);
+    border: 2px solid var(--glass-border);
+    padding: 2rem;
+    transition: border-color .3s ease;
+}
+
+/* Ефекти при фокусуванні на скляний ефект */
+.glass:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
+    border-color: #6667ab4d;
+}
+
+/* Стилі для другого скляного ефекту */
+.second-glass {
+    background: linear-gradient(45deg, rgba(166, 166, 255, .05) 0%, rgba(255, 255, 255, .05) 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px #0000001a;
+    backdrop-filter: blur(20px);
+    border: 2px solid var(--glass-border);
+    padding: 2rem;
+    transition: border-color .3s ease, background .3s ease;
+}
+
+/* Ефекти при фокусуванні на другий скляний ефект */
+.second-glass:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
+    border-color: #a6a6ff4d;
+}
+
+/* Медійний запит для prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .blob-1,
+    .blob-2 {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    *,
+    *:before,
+    *:after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Анімація появи */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
