@@ -26,7 +26,7 @@ html {
     background: #000000;
     color: var(--text-primary);
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
     scroll-behavior: smooth;
 }
 
@@ -34,7 +34,7 @@ html {
 body {
     min-height: 100vh;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
 }
 
 /* Стилі для фону */
@@ -46,6 +46,7 @@ body {
     height: 100%;
     z-index: -1;
     background: radial-gradient(circle at top right, rgba(var(--purple-primary), .15) 0%, rgba(var(--background), .95) 60%);
+    overflow: hidden;
 }
 
 /* Стилі для скляного ефекту */
