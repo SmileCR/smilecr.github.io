@@ -25,14 +25,14 @@ html {
     font-family: Inter, system-ui, sans-serif;
     background: #000000;
     color: var(--text-primary);
-    min-height: 100vh;
+    height: 100%;
     overflow: hidden;
     scroll-behavior: smooth;
 }
 
 /* Стилі для body */
 body {
-    min-height: 100vh;
+    height: 100%;
     position: relative;
     overflow: hidden;
 }
