@@ -45,7 +45,6 @@ main:where(.astro-J7PV25F6) {
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin-bottom: 2rem;
 }
 
 /* Стилі тексту заголовка */
@@ -111,7 +110,10 @@ main:where(.astro-J7PV25F6) {
 /* Стилі заголовка */
 .title:where(.astro-J7PV25F6) {
     color: var(--text-secondary);
-    margin: .5rem 0 1рем;
+    margin: .5rem 0 1rem;
+    font-size: 1.125rem;
+    letter-spacing: .5px;
+    font-weight: 500;
 }
 
 /* Стилі контейнера соціальних посилань */
@@ -415,11 +417,16 @@ h2:where(.astro-J7PV25F6) {
     }
 
     .content:where(.astro-J7PV25F6) {
-        padding: 1.6rem;
+        padding: 3.2rem;
     }
 
     .social-links:where(.astro-J7PV25F6) {
         justify-content: center;
+    }
+
+    .name-badge:where(.astro-J7PV25F6) {
+        flex-direction: column;
+        gap: .5rem;
     }
 
     .blob-1, .blob-2 {
