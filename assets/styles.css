@@ -313,7 +313,7 @@ h2:where(.astro-J7PV25F6) {
     border: 1px solid var(--glass-border-color);
     transition: all .4s cubic-bezier(.2,.8,.2,1);
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     will-change: transform, box-shadow, border-color;
 }
 
