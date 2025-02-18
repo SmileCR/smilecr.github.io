@@ -11859,12 +11859,22 @@ button.tagsButton_f369db {
     background: var(--background-primary);
 }
 
+/* Переменные CSS */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --font-primary: 'Arial', sans-serif;
+    --transition-duration: 0.3s;
+}
+
 .container__3a5a1::-webkit-scrollbar {
     display: none;
 }
 
 .dot__148e9 {
-    background-color: var(--interactive-normal)
+    background-color: var(--interactive-normal);
 }
 
 .contentWrapper__9c62c {
@@ -11888,9 +11898,32 @@ button.tagsButton_f369db {
 }
 
 .menus_af7fb7 svg:has(.status_a423bd) {
-    margin: 2px
+    margin: 2px;
 }
 
 [class^=footer_]:has([class*=discoveryIcon_]) {
     display: none;
+}
+
+/* Анимации и переходы */
+.container__3a5a1,
+.contentWrapper__9c62c,
+.container_cb32c7,
+.oauth2ModalWrapper__647f0>div {
+    transition: background-color var(--transition-duration), transform var(--transition-duration);
+}
+
+.container__3a5a1:hover,
+.contentWrapper__9c62c:hover,
+.container_cb32c7:hover,
+.oauth2ModalWrapper__647f0>div:hover {
+    transform: scale(1.05);
+}
+
+.menuItemLabel_af7fb7 {
+    transition: font-weight var(--transition-duration);
+}
+
+.menuItemLabel_af7fb7:hover {
+    font-weight: bold;
 }
