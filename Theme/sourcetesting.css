@@ -9586,10 +9586,8 @@ html:not(.app-focused) .sidebarRegionScroller__23e6b {
     text-transform: capitalize
 }
 
-/* Оптимізація відступів і розмірів */
 .linkTop__2ea32 .name__2ea32 {
-    font-size: 16px; /* Збільшення розміру шрифту */
-    padding: 8px 0; /* Додавання відступів */
+    font-size: 14px
 }
 
 .linkTop__2ea32,
@@ -9636,7 +9634,6 @@ html:not(.app-focused) .sidebarRegionScroller__23e6b {
     --icon-color: var(--text-muted)
 }
 
-/* Додавання анімацій */
 .container__2637a a .iconContainer__2ea32 {
     --size: 18px;
     --mask-size: 100%;
@@ -9651,12 +9648,7 @@ html:not(.app-focused) .sidebarRegionScroller__23e6b {
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-position: center;
-    mask-position: center;
-    transition: transform 0.2s ease-in-out;
-}
-
-.container__2637a a .iconContainer__2ea32:hover {
-    transform: scale(1.1); /* Легка анімація при наведенні */
+    mask-position: center
 }
 
 .container__2637a a .iconContainer__2ea32 svg {
@@ -11846,9 +11838,8 @@ button.tagsButton_f369db {
 }
 
 .container__34940,
-/* Покращення контрасту */
 .container__3a5a1 {
-    background-color: #2c2f33; /* Темніший фон */
+    background-color: var(--background-secondary) !important
 }
 
 .container__34940>* {
@@ -11873,12 +11864,11 @@ button.tagsButton_f369db {
 }
 
 .dot__148e9 {
-    background-color: #7289da; /* Яскравіший колір для кращого контрасту */
+    background-color: var(--interactive-normal)
 }
 
-/* Зміна кольорової схеми */
 .contentWrapper__9c62c {
-    background-color: #23272a; /* Темніший фон для нічного режиму */
+    background-color: var(--background-floating);
 }
 
 .container_cb32c7 {
@@ -11889,10 +11879,8 @@ button.tagsButton_f369db {
     background-color: var(--background-primary);
 }
 
-/* Зміна шрифтів */
 .menuItemLabel_af7fb7 {
-    font-weight: bold;
-    font-family: 'Arial', sans-serif; /* Зміна шрифту */
+    font-weight: var(--menu-font-weight);
 }
 
 .panels_c48ade .container__37e49 .horizontal__7c0ba button:last-child .contents__201d5 .lottieIcon__5eb9b {
