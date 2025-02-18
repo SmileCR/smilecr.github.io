@@ -11894,3 +11894,65 @@ button.tagsButton_f369db {
 [class^=footer_]:has([class*=discoveryIcon_]) {
     display: none;
 }
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container__3a5a1::-webkit-scrollbar {
+    display: none;
+}
+
+.dot__148e9 {
+    background-color: var(--interactive-normal);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.contentWrapper__9c62c {
+    background-color: var(--background-floating);
+    padding: 16px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.container_cb32c7 {
+    background-color: var(--background-tertiary);
+    padding: 16px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.oauth2ModalWrapper__647f0 > div {
+    background-color: var(--background-primary);
+    padding: 16px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.menuItemLabel_af7fb7 {
+    font-weight: var(--menu-font-weight);
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.menuItemLabel_af7fb7:hover {
+    color: var(--primary-color);
+}
+
+.panels_c48ade .container__37e49 .horizontal__7c0ba button:last-child .contents__201d5 .lottieIcon__5eb9b {
+    margin-left: 3px;
+}
+
+.menus_af7fb7 svg:has(.status_a423bd) {
+    margin: 2px;
+}
+
+[class^=footer_]:has([class*=discoveryIcon_]) {
+    display: none;
+}
